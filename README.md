@@ -23,7 +23,7 @@ Turn Raspberry pi into a CCTV
 
 ### File name filter example for getall.bat or scp
 - Simply leave it blank or `*` to get all ~1GB videos.
-- `"2015\ 05\ 18*"` to get all videos captured on may 18th, 2015.
+- `"2015\ 05\ 18*"` to get all videos captured on May 18th, 2015.
 
 ### How to play recorded .264 videos
 [ffplay](https://ffmpeg.org/ffplay.html) can be used to play it directly or convert it with [ffmpeg](https://trac.ffmpeg.org/wiki/Encode/H.264).
