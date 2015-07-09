@@ -31,10 +31,15 @@ Turn Raspberry pi into a CCTV
 ### MQTT version
 You can be noticed for CCTV status messages by MQTT.
 It's utilizing [paho python client](http://www.eclipse.org/paho/clients/python/).
-`sudo pip install paho-mqtt`
-`sudo python mqtt_cctv.py <topic> [broker address] [id] [pw]`
-Sending a message `record` to topic `/control/<topic>` will record for several seconds as same as capturing a motion. 
+```
+sudo pip install paho-mqtt
+sudo python mqtt_cctv.py <topic> [broker address] [id] [pw]
+```
+Sending a message `record` to topic `/control/<topic>` will record for several seconds as same as capturing a motion.
+ 
 If you want to install this version as service, after installing the service as instruction above, overwrite the file /home/pi/cctv.py with it and restart the service.
-`mv mqtt_cctv.py /home/pi/cctv.py && sudo service cctv restart`
+```
+mv mqtt_cctv.py /home/pi/cctv.py && sudo service cctv restart
+```
 
 > Feel free to take a look at cctv.py and apply the CV on it. 
