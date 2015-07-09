@@ -10,7 +10,7 @@ Turn Raspberry pi into a CCTV
 ## Prerequisites
 1.Raspberry compatible camera connected to its camera connector. Other interfaces like GPIO is not tested but may possible somehow...
 2.`sudo pip install numpy`
-3.`sudo apt-get install python-picamera` [http://picamera.readthedocs.org/en/release-1.10/install2.html]
+3.`sudo apt-get install python-picamera` details(http://picamera.readthedocs.org/en/release-1.10/install2.html)
 4.`sudo raspi-config` and enable camera.
 5.Git installed system that you'll use as a surveillance monitor. On Windows, git bin folder needs to be registered in environmental variable path. The getall script uses the scp.exe in it.
 
