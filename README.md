@@ -22,7 +22,7 @@ Turn Raspberry pi into a CCTV
   If you're using Windows for it and do not want python to be installed, use `getall <address of your raspberry pi> [file name or filter]` instead (utilizing getall.bat).  
 
 ### File name filter example for getall.bat or scp
-- Simply leave it blank or `*` to get all ~1GB videos.
+- Simply leave it blank or `*` to get all videos.
 - `"2015\ 05\ 18*"` to get all videos captured on May 18th, 2015.
 
 ### How to play recorded .264 videos
