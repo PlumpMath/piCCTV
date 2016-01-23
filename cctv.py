@@ -3,6 +3,8 @@ import picamera.array
 import numpy as np
 # import cv2
 
+OUTPUT_DIR = '/home/pi/cctv_capture'
+
 if __name__ == '__main__':
   def msg(msg):
     if msg == 'record':
@@ -25,9 +27,11 @@ if __name__ == '__main__':
   stream = None
   outfile = None
   last_pos = 0
-  from os import chdir, listdir, remove, curdir
-  from os.path import getsize
-  chdir('/home/pi/cctv_capture')
+  from os import chdir, listdir, remove, curdir, mkdir
+  from os.path import getsize, exists
+  if not exists(OUTPUT_DIR):
+    mkdir(OUTPUT_DIR)
+  chdir(OUTPUT_DIR)
 
   def write_video():
     global outfile, last_pos, stream
