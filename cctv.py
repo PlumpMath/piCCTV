@@ -1,4 +1,5 @@
 import io, time, picamera
+import picamera.array
 import numpy as np
 # import cv2
 
