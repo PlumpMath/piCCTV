@@ -1,5 +1,4 @@
 import io, time, picamera
-import picamera.array
 import numpy as np
 # import cv2
 
@@ -63,7 +62,7 @@ if __name__ == '__main__':
 
   with picamera.PiCamera() as cam:
     cam.resolution = (1920//2, 1080//2) # pi is not powerful enough for full HD record
-    stream = picamera.PiCameraCircularIO(cam, seconds=5)
+    stream = picamera.PiCameraCircularIO(cam, seconds=1)
     with DetectMotion(cam) as motion:
       try:
         cam.start_recording(stream, format='h264', motion_output=motion)
